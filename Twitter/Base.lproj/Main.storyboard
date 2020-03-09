@@ -65,12 +65,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fb-0f-9b0" userLabel="Character Count Label">
+                                <rect key="frame" x="359.5" y="192" width="34.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Jhl-Jq-zgy" firstAttribute="trailing" secondItem="0fb-0f-9b0" secondAttribute="trailing" constant="20" id="4fg-ro-KsF"/>
                             <constraint firstItem="Jhl-Jq-zgy" firstAttribute="trailing" secondItem="2XP-N1-zhc" secondAttribute="trailing" id="680-RR-mwf"/>
                             <constraint firstItem="2XP-N1-zhc" firstAttribute="top" secondItem="Jhl-Jq-zgy" secondAttribute="top" id="e94-Yl-zib"/>
                             <constraint firstItem="2XP-N1-zhc" firstAttribute="leading" secondItem="Jhl-Jq-zgy" secondAttribute="leading" id="kZq-R6-hdA"/>
+                            <constraint firstItem="0fb-0f-9b0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Jhl-Jq-zgy" secondAttribute="leading" symbolic="YES" id="tMd-8y-qeD"/>
+                            <constraint firstItem="0fb-0f-9b0" firstAttribute="top" secondItem="2XP-N1-zhc" secondAttribute="bottom" constant="8" id="zhn-EA-7dw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jhl-Jq-zgy"/>
                     </view>
@@ -89,6 +98,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="characterCountLabel" destination="0fb-0f-9b0" id="3Yg-5o-aAy"/>
                         <outlet property="tweetTextView" destination="2XP-N1-zhc" id="WyR-PZ-gjV"/>
                     </connections>
                 </viewController>
