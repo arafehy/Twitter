@@ -200,7 +200,7 @@
                                 <action selector="onLogout:" destination="fx8-o4-5XJ" id="DY8-89-b7h"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Tweet" id="dRq-tg-CYd">
+                        <barButtonItem key="rightBarButtonItem" title="Tweet" image="edit-icon" id="dRq-tg-CYd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="yMH-Di-DKT" kind="presentation" id="bg4-ed-9Ll"/>
@@ -253,6 +253,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="edit-icon" width="30" height="27"/>
         <image name="favor-icon" width="30" height="30"/>
         <image name="retweet-icon" width="30" height="30"/>
     </resources>
