@@ -42,7 +42,7 @@ class TweetCell: UITableViewCell {
     func setFavorite(_ isFavorited: Bool) {
         favorited = isFavorited
         if (favorited) {
-            favButton.setImage(UIImage(named: "Favor-icon-red"), for: .normal)
+            favButton.setImage(UIImage(named: "favor-icon-red"), for: .normal)
         }
         else {
             favButton.setImage(UIImage(named: "favor-icon"), for: .normal)
